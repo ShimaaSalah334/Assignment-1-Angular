@@ -1,0 +1,8 @@
+ .line{
+  background-color: var(--secondary-color);
+  height: 4px;
+  width: 80px;
+}
+i{
+  color: var(--secondary-color);
+}

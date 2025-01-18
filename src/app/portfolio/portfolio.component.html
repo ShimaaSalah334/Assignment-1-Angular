@@ -1,0 +1,31 @@
+<section class="portfolio mb-4">
+  <div class="container pt-4">
+    <h2 class="text-uppercase fs-1 fw-bold text-center pt-4 mb-3">
+      portfolio component
+    </h2>
+  <app-star></app-star>
+ <div class="row gy-4">
+      @for (image of images; track $index) {
+      <div class="col-md-6 col-lg-4">
+        <div class="card position-relative" (click)="showModal(image.src)">
+          <img [src]="image.src" class="w-100 rounded-3" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 d-flex justify-content-center align-items-center rounded-3"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!------- Modal ------->
+<div
+  class="myModal position-fixed w-100 h-100 top-0 d-flex justify-content-center align-items-center bg-primary bg-opacity-25 d-none"
+  #modal
+  (click)="closeModal($event)"
+>
+  <img src="" alt="" #modalImage  />
+</div>

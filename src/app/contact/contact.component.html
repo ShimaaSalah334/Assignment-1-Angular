@@ -1,0 +1,65 @@
+<section class="contact mb-4">
+  <div class="container-fluid container-md pt-3">
+    <h2 class="text-uppercase fs-1 fw-bold text-center mb-3 pt-4">
+      contact section
+    </h2>
+   <app-star></app-star>
+    <form class="row gy-3 mx-auto mt-5 p-0 p-md-3">
+      <div class="col-12">
+        <label
+          for="name"
+          class="form-label position-relative z-n1"
+          [class.top-0]="showLabel.userName"
+          >userName :
+        </label>
+        <input
+          type="text"
+          class="form-control py-3 border-0 border-bottom"
+          id="name"
+          placeholder="userName"
+          name="userName"
+          [(ngModel)]="showLabel.userName"
+        />
+      </div>
+      <div class="col-12">
+        <label for="age" class="form-label position-relative z-n1"  [class.top-0]="showLabel.userAge">userAge : </label>
+        <input
+          type="text"
+          class="form-control py-3 border-0 border-bottom"
+          id="age"
+          placeholder="userAge"
+          name="userAge"
+          [(ngModel)]="showLabel.userAge"
+
+        />
+      </div>
+      <div class="col-12">
+        <label for="email" class="form-label position-relative z-n1"  [class.top-0]="showLabel.userEmail">userEmail : </label>
+        <input
+          type="email"
+          class="form-control py-3 border-0 border-bottom"
+          id="email"
+          placeholder="userEmail"
+          name="userEmail"
+          [(ngModel)]="showLabel.userEmail"
+
+        />
+      </div>
+      <div class="col-12">
+        <label for="pass" class="form-label position-relative z-n1" [class.top-0]="showLabel.userPass">userPassword : </label>
+        <input
+          type="password"
+          class="form-control py-3 border-0 border-bottom"
+          id="pass"
+          placeholder="userPassword"
+          name="userPassword"
+          [(ngModel)]="showLabel.userPass"
+
+        />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn text-white mt-4">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>

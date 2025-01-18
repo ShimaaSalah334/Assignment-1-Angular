@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg text-uppercase py-4 fixed-top" #navBar>
+  <div class="container">
+    <a class="navbar-brand text-white fs-2 fw-bold" href="#"
+      >Start Framework
+    </a>
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa-solid fa-bars text-white fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'/about'"
+            routerLinkActive="active rounded-3"
+            >about</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'/portfolio'"
+            routerLinkActive="active rounded-3 "
+            >portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'/contact'"
+            routerLinkActive="active rounded-3 "
+            >contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

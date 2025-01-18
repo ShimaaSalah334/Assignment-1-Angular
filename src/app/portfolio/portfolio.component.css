@@ -1,0 +1,51 @@
+.portfolio{
+  color:var(--secondary-color);
+  min-height: calc(-106px + 100vh);
+ margin-top: 86px;
+}
+
+.portfolio .card .layer{
+  background-color: #1abc9ce6;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+.portfolio .card .layer i{
+  font-size: 96px;
+}
+.portfolio .card:hover .layer{
+  opacity: 1;
+}
+.myModal{
+  z-index: 9999;
+}
+
+@media screen and (max-width:575px) {
+  .myModal img{
+    width:90%;
+  }
+}
+@media screen and (min-width:576px) {
+  .myModal img{
+    width:75%;
+  }
+}
+@media screen and (min-width:768px) {
+  .myModal img{
+    width:60%;
+  }
+}
+@media screen and (min-width:992px) {
+  .myModal img{
+    width:55%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .myModal img{
+    width:45%;
+  }
+}

@@ -1,0 +1,12 @@
+.about{
+  background-color:var(--main-color);
+ min-height: calc(-106px + 100vh);
+ margin-top: 86px;
+}
+
+@media screen and (max-width:350px){
+  .about{
+    padding: 25px 0px;
+  }
+
+}
